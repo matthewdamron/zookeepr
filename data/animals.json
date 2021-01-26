@@ -117,6 +117,17 @@
         "hungry"
       ],
       "id": "11"
+    },
+    {
+      "name": "Tim",
+      "species": "Lemur",
+      "diet": "folivore",
+      "personalityTraits": [
+        "zany",
+        "anxious",
+        "goofy"
+      ],
+      "id": "12"
     }
   ]
 }

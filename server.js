@@ -15,6 +15,20 @@ app.use(express.urlencoded({
 }));
 // parse incoming JSON data
 app.use(express.json());
+// use static public
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+app.get('/animals', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/animals.html'));
+});
+
+app.get('/zookeepers', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+});
 
 function filterByQuery(query, animalsArray) {
     let personalityTraitsArray = [];
